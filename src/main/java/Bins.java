@@ -2,11 +2,11 @@
 public class Bins {
     int min;
     int max;
-Integer [] possibleValues;
+int [] possibleValues;
     public Bins(int min, int max) {// have to create a constructor(int min, max)
         this.min = min;
         this.max = max;
-        possibleValues = new Integer[max - min +1]; // create array
+        possibleValues = new int[max - min +1]; // create array
     }
 
 
@@ -15,7 +15,12 @@ Integer [] possibleValues;
         return this.possibleValues[binNumber - this.min];
    }
 
-   // find the value at bin number
+    public void incrementBin(int binNumber) {
+        this.possibleValues[binNumber -this.min]++; //is incrementing
+
+    }
+
+    // find the value at bin number
 
    //return value
 

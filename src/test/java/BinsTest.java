@@ -13,17 +13,29 @@ public void testBinConstructor(){
         Assert.assertNotNull(bins);
 
     }
-public void testGetBin(){
+    public Integer getbin(int binNumber) {
+        return 0;
+    }
+@Test
+        public void testGetBin () {
 
-        int min = 2;
-        int max = 12;
+            int min = 2;
+            int max = 12;
+            Bins bins = new Bins(min, max);
+
+            int actual = bins.getBin(4);
+            Assert.assertEquals(0, actual);
+        }
+
+@Test
+    public void testIcrementBin(){
+
+    int min = 2;
+    int max = 12;
     Bins bins = new Bins(min, max);
-
-   Integer actual = bins.getBin(4);
-   Assert.assertEquals(0,actual.intValue());
+    bins.incrementBin(4);
+    Assert.assertEquals(1, bins.getBin(4).intValue());
 }
-
-
 
 
 }
