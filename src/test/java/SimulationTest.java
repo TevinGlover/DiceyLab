@@ -14,4 +14,12 @@ class SimulationTest {
         Assert.assertNotNull(simulation);
     }
 
+    @Test
+    void testRunSimulation() {
+        int numberOfDice =2;
+        int numberOfTosses = 10;
+        Simulation simulation = new Simulation(numberOfDice, numberOfTosses);
+
+
+    }
 }
