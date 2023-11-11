@@ -4,7 +4,8 @@ public class Dice {
 // need constructor (int number of dice)
     int numberOfDice;
 public Dice(int numberOfDice){
-     this.numberOfDice = numberOfDice;
+
+    this.numberOfDice = numberOfDice;
 }
 // create a method
     // toss dice & add up andd addcup the value
